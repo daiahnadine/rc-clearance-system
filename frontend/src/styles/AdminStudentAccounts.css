@@ -82,7 +82,7 @@
 
 .header h4:nth-of-type(2) {
     font-weight: 300;
-    margin-left: 1335px;
+    margin-left: 1395px;
 }
 
 .header img {
@@ -132,50 +132,20 @@
     font-style: italic;
 }
 
-
-.filter-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: flex-end;
-    gap: 10px; 
-    position: absolute; 
-    top: 250px; 
-    right: 50px; 
-    border-radius: 5px; 
-}
-
-.input-box {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.filter-button {
-    width: 150px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    box-sizing: border-box;
-    height: 35px;
-}
-
-
 .table-container {
-    width: calc(100% - 320px); 
-    margin: 0 auto;
-    padding: 20px; 
-    position: relative; 
-    top: 10px;
-    right: 140px;
+    width: 100%;
+    text-align: center;
 }
 
 .clearance-table {
     background: white;
-    width: 95%; 
+    width: 81%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
+    margin-left: 320px;
     padding: 5px;
+    margin-top: -700px;
 }
 
 .clearance-table thead tr {
@@ -194,35 +164,4 @@
     border-bottom: 1px solid #dddddd;
 }
 
-.print-buttons {
-    display: flex;
-    align-items: center;
-    background-color: #2348A8;
-    width: 8%;
-    height: 35px;
-    border-radius: 8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 1700px;
-    cursor: pointer;
-    border: 1px solid #000000;
-    transition: background-color 0.3s;
-}
   
-.print-buttons img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    margin-top: 3px;
-    margin-left: 10px;
-}
-  
-.print-buttons a {
-    color: #ffffff;
-    font-size: 15px;
-    text-decoration: none; 
-}
-  
-.print-buttons:hover {
-    background-color: #0056b3; 
-}

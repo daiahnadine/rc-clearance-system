@@ -44,17 +44,18 @@ const RequestClearance = () => {
             </div>
 
             <div className="request-clearance-container">
-                <h1>Reqauest Clearance</h1>
-                <div className="dropdown-container">
-                    <label htmlFor="semester">Semester</label>
+                <h1>Request Clearance</h1>
+                <div className="input-box">
+                    <label htmlFor="userType">Semester</label>
                     <select className="filter-button" defaultValue="Filter Type">
                         <option disabled>Semester</option>
                         <option>First Semester</option>
                         <option>Second Semester</option>
                     </select>
                 </div>
-                <div className="dropdown-container">
-                    <label htmlFor="schoolYear">School Year</label>
+
+                <div className="input-box">
+                    <label htmlFor="userType">School Year</label>
                     <select className="filter-button" defaultValue="Filter Type">
                         <option disabled>School Year</option>
                         <option>2024</option>
@@ -63,8 +64,9 @@ const RequestClearance = () => {
                         <option>2027</option>
                     </select>
                 </div>
-                <div className="dropdown-container">
-                    <label htmlFor="graduating">Graduating</label>
+
+                <div className="input-box">
+                <label htmlFor="graduating">Graduating</label>
                     <select className="filter-button" defaultValue="Filter Type">
                         <option disabled>Graduating</option>
                         <option>Yes</option>
