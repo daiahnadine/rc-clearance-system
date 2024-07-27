@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: clearance-system
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: system
+    password: Changeme0
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8080
+logging:
