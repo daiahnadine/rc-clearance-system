@@ -132,6 +132,40 @@
     font-style: italic;
 }
 
+.filter-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-end;
+    gap: 10px; 
+    position: absolute; 
+    top: 210px; 
+    right: 50px; 
+    border-radius: 5px; 
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.search-input {
+    width: 200px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 35px;
+}
+
+.filter-button {
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 35px;
+}
+
 .table-container {
     width: 100%;
     text-align: center;
@@ -145,7 +179,7 @@
     text-align: left;
     margin-left: 320px;
     padding: 5px;
-    margin-top: -700px;
+    margin-top: -680px;
 }
 
 .clearance-table thead tr {
@@ -163,5 +197,7 @@
 .clearance-table tbody tr {
     border-bottom: 1px solid #dddddd;
 }
+
+
 
   

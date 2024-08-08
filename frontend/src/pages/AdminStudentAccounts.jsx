@@ -41,9 +41,20 @@ const AdminStudentAccounts = () => {
                 <h4>Thursday, July 25, 2024 1:33:15</h4>
             </div>
 
-            
-            <div className="clearance-status">
-                <h1>Students Accounts</h1>
+            <div className="filter-container">
+                <div className="input-box">
+                    <input type="text" id="searchInput" className="search-input" placeholder="Searh by last name"/>
+                </div>
+
+            <div className="input-box">
+                <select className="filter-button" defaultValue="" id="statusFilter">
+                    <option value="" disabled>Year Level</option>
+                    <option value="first-year">First Year</option>
+                    <option value="second-year">Second Year</option>
+                    <option value="third-year">Third Year</option>
+                    <option value="fourth-year">Fourth Year</option>
+                </select>
+            </div>
             </div>
 
             <table className="clearance-table">

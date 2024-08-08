@@ -52,6 +52,71 @@ const AdminDashboard = () => {
                 <h4>Department Accounts</h4>
                 <h3>0</h3>
             </div>
+
+            <div className="ssc">
+                <h4>SSC Accounts</h4>
+                <h3>0</h3>
+            </div>
+
+            <div className="osa">
+                <h4>Student Affairs Accounts</h4>
+                <h3>0</h3>
+            </div>
+            
+            <div className="spiritual-affairs">
+                <h4>Spiritual Affairs Accounts</h4>
+                <h3>0</h3>
+            </div>
+
+            <div className="prefect">
+                <h4>Student Discipline Accounts</h4>
+                <h3>0</h3>
+            </div>
+
+            <div className="guidance">
+                <h4>Guidance Accounts</h4>
+                <h3>0</h3>
+            </div>
+
+            <div className="library">
+                <h4>Library Accounts</h4>
+                <h3>0</h3>
+            </div>
+
+            <div className="laboratory">
+                <h4>Laboratory Accounts</h4>
+                <h3>0</h3>
+            </div>
+
+            <div className="clinic">
+                <h4>Clinic Accounts</h4>
+                <h3>0</h3>
+            </div>
+            
+            <div className="cashier">
+                <h4>Cashier Accounts</h4>
+                <h3>0</h3>
+            </div>
+
+            <div className="adviser">
+                <h4>Adviser Accounts</h4>
+                <h3>0</h3>
+            </div>
+
+            <div className="registrar">
+                <h4>Registrar's Office Accounts</h4>
+                <h3>0</h3>
+            </div>
+
+            <div className="cluster-coordinator">
+                <h4>Cluster Coordinator Accounts</h4>
+                <h3>0</h3>
+            </div>
+
+            <div className="dean">
+                <h4>Dean/TED-Director Accounts</h4>
+                <h3>0</h3>
+            </div>
         </div>
     );
 };
