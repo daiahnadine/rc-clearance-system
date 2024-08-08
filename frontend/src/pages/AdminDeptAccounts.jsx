@@ -41,10 +41,31 @@ const AdminDashboard = () => {
                 <h4>Thursday, July 25, 2024 1:33:15</h4>
             </div>
 
-            
-            <div className="clearance-status">
-                <h1>Department Accounts</h1>
+            <div className="filter-container">
+                <div className="input-box">
+                    <input type="text" id="searchInput" className="search-input" placeholder="Searh by name"/>
+                </div>
+
+            <div className="input-box">
+                <select className="filter-button" defaultValue="" id="statusFilter">
+                    <option value="" disabled>Filter Type</option>
+                    <option value="ssc">SSC</option>
+                    <option value="osa">Student Affairs</option>
+                    <option value="spiritual-affairs">Spiritual Affairs</option>
+                    <option value="prefect">Student Discipline</option>
+                    <option value="guidance">Guidance</option>
+                    <option value="library">Library</option>
+                    <option value="laboratory">Laboratory</option>
+                    <option value="clinic">Clinic</option>
+                    <option value="cashier">Cashier</option>
+                    <option value="adviser">Adviser</option>
+                    <option value="coordinator">Cluster Coordinator</option>
+                    <option value="registrar">Registrar</option>
+                    <option value="dean">Dean</option>
+                </select>
             </div>
+            </div>
+        
 
             <table className="clearance-table">
                 <thead>
