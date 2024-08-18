@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface LaboratoryService {
     List<Laboratory> getAllLaboratories();
+    int getLaboratoryCount();
 }

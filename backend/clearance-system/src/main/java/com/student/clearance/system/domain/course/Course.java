@@ -16,7 +16,4 @@ public class Course implements Serializable {
     private Long courseId;
 
     private String courseName;
-
-    @OneToMany(mappedBy = "course", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Student> students;
 }

@@ -22,4 +22,9 @@ public class StudentAffairsServiceImpl implements StudentAffairsService {
     public List<StudentAffairs> getAllStudentAffairs() {
         return studentAffairsRepository.findAll();
     }
+
+    @Override
+    public int getStudentAffairsCount() {
+        return (int) studentAffairsRepository.count();
+    }
 }

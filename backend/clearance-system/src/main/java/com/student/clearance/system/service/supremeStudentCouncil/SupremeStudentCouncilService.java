@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface SupremeStudentCouncilService {
     List<SupremeStudentCouncil> getAllSupremeStudentCouncils();
+    int getSupremeStudentCouncilCount();
 }

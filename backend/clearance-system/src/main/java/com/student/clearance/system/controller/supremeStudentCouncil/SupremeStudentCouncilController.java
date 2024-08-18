@@ -24,4 +24,10 @@ public class SupremeStudentCouncilController {
     public ResponseEntity<List<SupremeStudentCouncil>> getAllSupremeStudentCouncils() {
         return new ResponseEntity<>(supremeStudentCouncilService.getAllSupremeStudentCouncils(), HttpStatus.OK);
     }
+
+    @GetMapping("/councils/count")
+    public ResponseEntity<Integer> getSupremeStudentCouncilCount() {
+        int count = supremeStudentCouncilService.getSupremeStudentCouncilCount();
+        return ResponseEntity.ok(count);
+    }
 }

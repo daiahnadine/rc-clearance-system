@@ -20,8 +20,14 @@ public class StudentDisciplineController {
         this.studentDisciplineService = studentDisciplineService;
     }
 
-    @GetMapping("/Prefects")
+    @GetMapping("/prefects")
     public ResponseEntity<List<StudentDiscipline>> getAllStudentDisciplines() {
         return new ResponseEntity<>(studentDisciplineService.getAllStudentDisciplines(), HttpStatus.OK);
+    }
+
+    @GetMapping("/prefects/count")
+    public ResponseEntity<Integer> getStudentDisciplineCount() {
+        int count = studentDisciplineService.getStudentDisciplineCount();
+        return ResponseEntity.ok(count);
     }
 }

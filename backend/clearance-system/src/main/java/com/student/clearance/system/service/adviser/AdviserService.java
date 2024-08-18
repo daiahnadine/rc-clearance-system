@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface AdviserService {
     List<Adviser> getAllAdvisers();
+    int getAdviserCount();
 }

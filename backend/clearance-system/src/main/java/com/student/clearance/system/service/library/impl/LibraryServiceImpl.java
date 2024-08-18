@@ -22,4 +22,9 @@ public class LibraryServiceImpl implements LibraryService {
     public List<Library> getAllLibraries() {
         return libraryRepository.findAll();
     }
+
+    @Override
+    public int getLibraryCount() {
+        return (int) libraryRepository.count();
+    }
 }

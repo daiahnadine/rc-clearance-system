@@ -22,4 +22,9 @@ public class RegistrarServiceImpl implements RegistrarService {
     public List<Registrar> getAllRegistrars() {
         return registrarRepository.findAll();
     }
+
+    @Override
+    public int getRegistrarCount() {
+        return (int) registrarRepository.count();
+    }
 }

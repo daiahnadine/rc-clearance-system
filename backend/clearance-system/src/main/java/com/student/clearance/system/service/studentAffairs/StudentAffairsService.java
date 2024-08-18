@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface StudentAffairsService {
     List<StudentAffairs> getAllStudentAffairs();
+    int getStudentAffairsCount();
 }

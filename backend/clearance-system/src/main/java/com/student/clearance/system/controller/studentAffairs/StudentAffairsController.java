@@ -24,4 +24,10 @@ public class StudentAffairsController {
     public ResponseEntity<List<StudentAffairs>> getAllStudentAffairs() {
         return new ResponseEntity<>(studentAffairsService.getAllStudentAffairs(), HttpStatus.OK);
     }
+
+    @GetMapping("/affairs/count")
+    public ResponseEntity<Integer> getStudentAffairsCount() {
+        int count = studentAffairsService.getStudentAffairsCount();
+        return ResponseEntity.ok(count);
+    }
 }

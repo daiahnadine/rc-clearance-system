@@ -22,4 +22,9 @@ public class SupremeStudentCouncilServiceImpl implements SupremeStudentCouncilSe
     public List<SupremeStudentCouncil> getAllSupremeStudentCouncils() {
         return supremeStudentCouncilRepository.findAll();
     }
+
+    @Override
+    public int getSupremeStudentCouncilCount() {
+        return (int) supremeStudentCouncilRepository.count();
+    }
 }

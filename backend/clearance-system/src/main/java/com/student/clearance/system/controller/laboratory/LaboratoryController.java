@@ -24,4 +24,10 @@ public class LaboratoryController {
     public ResponseEntity<List<Laboratory>> getAllLaboratories() {
         return new ResponseEntity<>(laboratoryService.getAllLaboratories(), HttpStatus.OK);
     }
+
+    @GetMapping("/laboratories/count")
+    public ResponseEntity<Integer> getLaboratoryCount() {
+        int count = laboratoryService.getLaboratoryCount();
+        return ResponseEntity.ok(count);
+    }
 }

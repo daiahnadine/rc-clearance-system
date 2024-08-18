@@ -24,4 +24,10 @@ public class SpiritualAffairsController {
     public ResponseEntity<List<SpiritualAffairs>> getAllSpiritualAffairs() {
         return new ResponseEntity<>(spiritualAffairsService.getAllSpiritualAffairs(), HttpStatus.OK);
     }
+
+    @GetMapping("/affairs/count")
+    public ResponseEntity<Integer> getSpiritualAffairsCount() {
+        int count = spiritualAffairsService.getSpiritualAffairsCount();
+        return ResponseEntity.ok(count);
+    }
 }

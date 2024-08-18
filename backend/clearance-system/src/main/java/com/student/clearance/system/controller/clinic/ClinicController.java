@@ -24,4 +24,10 @@ public class ClinicController {
     public ResponseEntity<List<Clinic>> getAllClinics() {
         return new ResponseEntity<>(clinicService.getAllClinics(), HttpStatus.OK);
     }
+
+    @GetMapping("/clinics/count")
+    public ResponseEntity<Integer> getClinicCount() {
+        int count = clinicService.getClinicCount();
+        return ResponseEntity.ok(count);
+    }
 }

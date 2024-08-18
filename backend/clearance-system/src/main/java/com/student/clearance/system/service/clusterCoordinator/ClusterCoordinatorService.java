@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface ClusterCoordinatorService {
     List<ClusterCoordinator> getAllClusterCoordinators();
+    int getClusterCoordinatorCount();
 }

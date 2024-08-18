@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface LibraryService {
     List<Library> getAllLibraries();
+    int getLibraryCount();
 }

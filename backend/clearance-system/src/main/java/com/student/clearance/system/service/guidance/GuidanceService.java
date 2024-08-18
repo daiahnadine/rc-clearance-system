@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface GuidanceService {
     List<Guidance> getAllGuidances();
+    int getGuidanceCount();
 }

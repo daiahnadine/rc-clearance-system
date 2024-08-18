@@ -24,4 +24,10 @@ public class AdviserController {
     public ResponseEntity<List<Adviser>> getAllAdvisers() {
         return new ResponseEntity<>(adviserService.getAllAdvisers(), HttpStatus.OK);
     }
+
+    @GetMapping("/advisers/count")
+    public ResponseEntity<Integer> getAdviserCount() {
+        int count = adviserService.getAdviserCount();
+        return ResponseEntity.ok(count);
+    }
 }

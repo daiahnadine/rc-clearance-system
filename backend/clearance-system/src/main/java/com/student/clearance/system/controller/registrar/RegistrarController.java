@@ -24,4 +24,10 @@ public class RegistrarController {
     public ResponseEntity<List<Registrar>> getAllRegistrars() {
         return new ResponseEntity<>(registrarService.getAllRegistrars(), HttpStatus.OK);
     }
+
+    @GetMapping("/registrars/count")
+    public ResponseEntity<Integer> getRegistrarCount() {
+        int count = registrarService.getRegistrarCount();
+        return ResponseEntity.ok(count);
+    }
 }

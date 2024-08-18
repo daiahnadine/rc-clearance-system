@@ -23,4 +23,9 @@ public class SpiritualAffairsServiceImpl implements SpiritualAffairsService {
     public List<SpiritualAffairs> getAllSpiritualAffairs() {
         return spiritualAffairsRepository.findAll();
     }
+
+    @Override
+    public int getSpiritualAffairsCount() {
+        return (int) spiritualAffairsRepository.count();
+    }
 }

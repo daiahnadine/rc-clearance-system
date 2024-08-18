@@ -26,7 +26,7 @@ public class StudentController {
         return new ResponseEntity<>(studentService.getAllStudents(), HttpStatus.OK);
     }
 
-    @GetMapping("/student/{id}")
+    @GetMapping("/students/{id}")
     public ResponseEntity<Optional<Student>> getStudentById(@PathVariable Long id) {
         return new ResponseEntity<>(studentService.getStudentById(id), HttpStatus.OK);
     }
@@ -77,5 +77,11 @@ public class StudentController {
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
+    }
+
+    @GetMapping("/students/count")
+    public ResponseEntity<Integer> getStudentCount() {
+        int count = studentService.getStudentCount();
+        return ResponseEntity.ok(count);
     }
 }

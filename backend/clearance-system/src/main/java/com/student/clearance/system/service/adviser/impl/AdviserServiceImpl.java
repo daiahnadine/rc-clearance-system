@@ -22,4 +22,9 @@ public class AdviserServiceImpl implements AdviserService {
     public List<Adviser> getAllAdvisers() {
         return adviserRepository.findAll();
     }
+
+    @Override
+    public int getAdviserCount() {
+        return (int) adviserRepository.count();
+    }
 }

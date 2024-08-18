@@ -24,4 +24,10 @@ public class LibraryController {
     public ResponseEntity<List<Library>> getAllLibraries() {
         return new ResponseEntity<>(libraryService.getAllLibraries(), HttpStatus.OK);
     }
+
+    @GetMapping("/libraries/count")
+    public ResponseEntity<Integer> getLibraryCount() {
+        int count = libraryService.getLibraryCount();
+        return ResponseEntity.ok(count);
+    }
 }

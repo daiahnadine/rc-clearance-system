@@ -22,4 +22,9 @@ public class CashierServiceImpl implements CashierService {
     public List<Cashier> getAllCashiers() {
         return cashierRepository.findAll();
     }
+
+    @Override
+    public int getCashierCount() {
+        return (int) cashierRepository.count();
+    }
 }

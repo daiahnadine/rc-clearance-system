@@ -16,7 +16,4 @@ public class YearLevel implements Serializable {
     private Long yearLevelId;
 
     private String yearLevel;
-
-    @OneToMany(mappedBy = "yearLevel", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Student> students;
 }

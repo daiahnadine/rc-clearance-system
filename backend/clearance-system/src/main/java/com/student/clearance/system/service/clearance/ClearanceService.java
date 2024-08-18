@@ -8,7 +8,7 @@ import java.util.Optional;
 public interface ClearanceService {
     List<Clearance> getAllClearances();
     Optional<Clearance> getClearanceById(Long id);
-    Clearance addClearance(Clearance clearance);
+    Clearance addClearance(Clearance clearance, String studentNumber);
     Clearance updateClearance(Clearance clearance);
     void deleteClearance(Long id);
 }

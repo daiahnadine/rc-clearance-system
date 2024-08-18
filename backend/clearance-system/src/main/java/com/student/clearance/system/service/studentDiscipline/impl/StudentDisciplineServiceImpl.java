@@ -23,4 +23,9 @@ public class StudentDisciplineServiceImpl implements StudentDisciplineService {
     public List<StudentDiscipline> getAllStudentDisciplines() {
         return studentDisciplineRepository.findAll();
     }
+
+    @Override
+    public int getStudentDisciplineCount() {
+        return (int) studentDisciplineRepository.count();
+    }
 }

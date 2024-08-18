@@ -24,4 +24,10 @@ public class DeanController {
     public ResponseEntity<List<Dean>> getAllDeans() {
         return new ResponseEntity<>(deanService.getAllDeans(), HttpStatus.OK);
     }
+
+    @GetMapping("/deans/count")
+    public ResponseEntity<Integer> getDeanCount() {
+        int count = deanService.getDeanCount();
+        return ResponseEntity.ok(count);
+    }
 }

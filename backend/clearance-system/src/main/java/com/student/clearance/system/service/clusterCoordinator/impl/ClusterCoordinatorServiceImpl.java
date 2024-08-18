@@ -22,4 +22,9 @@ public class ClusterCoordinatorServiceImpl implements ClusterCoordinatorService 
     public List<ClusterCoordinator> getAllClusterCoordinators() {
         return clusterCoordinatorRepository.findAll();
     }
+
+    @Override
+    public int getClusterCoordinatorCount() {
+        return (int) clusterCoordinatorRepository.count();
+    }
 }

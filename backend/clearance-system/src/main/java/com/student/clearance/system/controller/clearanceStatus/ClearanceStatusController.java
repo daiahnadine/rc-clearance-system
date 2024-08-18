@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/Clearance-status")
+@RequestMapping("/Status")
 public class ClearanceStatusController {
 
     private final ClearanceStatusService clearanceStatusService;
@@ -28,9 +28,10 @@ public class ClearanceStatusController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Optional<ClearanceStatus>> getClearanceStatusById(@PathVariable Long id) {
+    public ResponseEntity<ClearanceStatus> getClearanceStatusById(@PathVariable Long id) {
         Optional<ClearanceStatus> status = clearanceStatusService.getClearanceStatusById(id);
-        return new ResponseEntity<>(status, HttpStatus.OK);
+        return status.map(value -> new ResponseEntity<>(value, HttpStatus.OK))
+                .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
     @PostMapping("/add")

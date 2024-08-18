@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface DeanService {
     List<Dean> getAllDeans();
+    int getDeanCount();
 }

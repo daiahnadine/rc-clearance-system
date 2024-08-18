@@ -22,4 +22,9 @@ public class GuidanceServiceImpl implements GuidanceService {
     public List<Guidance> getAllGuidances() {
         return guidanceRepository.findAll();
     }
+
+    @Override
+    public int getGuidanceCount() {
+        return (int) guidanceRepository.count();
+    }
 }

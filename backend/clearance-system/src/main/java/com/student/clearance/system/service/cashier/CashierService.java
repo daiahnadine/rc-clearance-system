@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface CashierService {
     List<Cashier> getAllCashiers();
+    int getCashierCount();
 }

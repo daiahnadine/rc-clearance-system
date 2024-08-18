@@ -22,4 +22,9 @@ public class LaboratoryServiceImpl implements LaboratoryService {
     public List<Laboratory> getAllLaboratories() {
         return laboratoryRepository.findAll();
     }
+
+    @Override
+    public int getLaboratoryCount() {
+        return (int) laboratoryRepository.count();
+    }
 }

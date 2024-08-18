@@ -24,4 +24,10 @@ public class CashierController {
     public ResponseEntity<List<Cashier>> getAllCashiers() {
         return new ResponseEntity<>(cashierService.getAllCashiers(), HttpStatus.OK);
     }
+
+    @GetMapping("/cashiers/count")
+    public ResponseEntity<Integer> getCashierCount() {
+        int count = cashierService.getCashierCount();
+        return ResponseEntity.ok(count);
+    }
 }

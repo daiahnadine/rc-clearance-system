@@ -33,9 +33,9 @@ public class ClearanceController {
     }
 
     @PostMapping
-    public ResponseEntity<String> addClearance(@RequestBody Clearance clearance) {
+    public ResponseEntity<String> addClearance(@RequestBody Clearance clearance, @RequestParam String studentNumber) {
         try {
-            clearanceService.addClearance(clearance);
+            clearanceService.addClearance(clearance, studentNumber);
             return new ResponseEntity<>("Clearance successfully added", HttpStatus.CREATED);
         } catch (Exception e) {
             return new ResponseEntity<>("Clearance cannot be added", HttpStatus.INTERNAL_SERVER_ERROR);

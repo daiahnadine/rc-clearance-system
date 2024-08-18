@@ -24,4 +24,10 @@ public class ClusterCoordinatorController {
     public ResponseEntity<List<ClusterCoordinator>> getAllClusterCoordinators() {
         return new ResponseEntity<>(clusterCoordinatorService.getAllClusterCoordinators(), HttpStatus.OK);
     }
+
+    @GetMapping("/coordinators/count")
+    public ResponseEntity<Integer> getClusterCoordinatorCount() {
+        int count = clusterCoordinatorService.getClusterCoordinatorCount();
+        return ResponseEntity.ok(count);
+    }
 }

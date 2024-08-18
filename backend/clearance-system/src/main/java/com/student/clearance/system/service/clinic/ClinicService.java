@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface ClinicService {
     List<Clinic> getAllClinics();
+    int getClinicCount();
 }

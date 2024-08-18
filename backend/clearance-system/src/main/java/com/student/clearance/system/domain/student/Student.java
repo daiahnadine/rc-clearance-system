@@ -15,7 +15,7 @@ import java.util.List;
 @Data
 public class Student extends Person implements Serializable {
 
-    @Column(length = 10)
+    @Column(length = 10, unique = true, nullable = false)
     private String studentNumber;
 
     @ManyToOne

@@ -22,4 +22,9 @@ public class ClinicServiceImpl implements ClinicService {
     public List<Clinic> getAllClinics() {
         return clinicRepository.findAll();
     }
+
+    @Override
+    public int getClinicCount() {
+        return (int) clinicRepository.count();
+    }
 }

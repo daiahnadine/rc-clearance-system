@@ -12,9 +12,9 @@ public class Clearance implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long clearanceNo;
+    private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "student_id")
+    @JoinColumn(name = "student_id", nullable = false) // This references the primary key of Student
     private Student student;
 }

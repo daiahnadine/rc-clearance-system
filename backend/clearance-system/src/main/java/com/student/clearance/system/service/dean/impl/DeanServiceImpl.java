@@ -22,4 +22,9 @@ public class DeanServiceImpl implements DeanService {
     public List<Dean> getAllDeans() {
         return deanRepository.findAll();
     }
+
+    @Override
+    public int getDeanCount() {
+        return (int) deanRepository.count();
+    }
 }

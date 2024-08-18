@@ -24,4 +24,10 @@ public class GuidanceController {
     public ResponseEntity<List<Guidance>> getAllGuidances() {
         return new ResponseEntity<>(guidanceService.getAllGuidances(), HttpStatus.OK);
     }
+
+    @GetMapping("/guidances/count")
+    public ResponseEntity<Integer> getGuidanceCount() {
+        int count = guidanceService.getGuidanceCount();
+        return ResponseEntity.ok(count);
+    }
 }
